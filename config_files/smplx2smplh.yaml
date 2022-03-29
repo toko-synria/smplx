@@ -1,6 +1,6 @@
 datasets:
     mesh_folder:
-        data_folder: 'meshes/smplx'
+        data_folder: '/hdd/zen/data/ActBound/GRAB/out/s1/flashlight_lift'
 deformation_transfer_path: 'transfer_data/smplx2smplh_deftrafo_setup.pkl'
 mask_ids_fname: ''
 summary_steps: 100
@@ -19,7 +19,7 @@ body_model:
     gender: "female"
     # gender: "male"
     ext: 'pkl'
-    folder: "transfer_data/body_models"
+    folder: "/hdd/zen/dev/copycat/Copycat/data/smpl"
     use_compressed: False
     use_face_contour: True
     smplh:

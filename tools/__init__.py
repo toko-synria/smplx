@@ -15,5 +15,5 @@
 #
 # Contact: ps-license@tuebingen.mpg.de
 
-import clean_ch
-import merge_smplh_mano
+import tools.clean_ch
+import tools.merge_smplh_mano

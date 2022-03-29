@@ -23,6 +23,10 @@ lib64/
 parts/
 sdist/
 var/
+output/
+transfer_data/
+transfer_data/*
+transfer_data/*
 wheels/
 *.egg-info/
 .installed.cfg
