@@ -604,7 +604,7 @@ class SMPLH(SMPL):
             # Load the model
             if osp.isdir(model_path):
                 model_fn = "SMPLH_{}.{ext}".format(gender.upper(), ext=ext)
-                smplh_path = os.path.join(model_path, model_fn)
+                smplh_path = os.path.join(model_path, "smplh", model_fn)
             else:
                 smplh_path = model_path
             assert osp.exists(smplh_path), "Path {} does not exist!".format(
