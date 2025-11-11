@@ -778,6 +778,10 @@ class SMPLH(SMPL):
         full_pose = torch.cat(
             [global_orient, body_pose, left_hand_pose, right_hand_pose], dim=1)
         full_pose += self.pose_mean
+        
+        if betas.shape[0] != batch_size:
+            num_repeats = int(batch_size / betas.shape[0])
+            betas = betas.expand(num_repeats, -1)
 
         vertices, joints = lbs(
             betas,
